@@ -1,18 +1,16 @@
 number = int(input())
-count = 0
 total = []
+# ИСПРАВИТЬ: когда количество итераций заранее известно, то обычно уместнее использовать цикл for
+count = 0
 while count < number:
     num = int(input())
-    count+=1
+    # ИСПОЛЬЗОВАТЬ везде: PEP 8 рекомендует добавлять пробелы вокруг бинарных операторов
+    count += 1
     if num > 0:
         total.append(num)
     else:
-        continue       
+        continue
 print(sum(total))
- 
-
-
-
 
 
 # 6
@@ -23,3 +21,8 @@ print(sum(total))
 # -1
 # 8
 # 22
+
+# ДОБАВИТЬ: тесты с другими входными данными
+
+
+# ИТОГ: хорошо — 2/3
